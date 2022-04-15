@@ -1,9 +1,9 @@
 use std::io::{self, Write};
 
 fn main() {
-    loop {
-        println!("Temperature Converter");
+    println!("Temperature Converter");
 
+    loop {
         println!("Input c to change from Celsius or f to change from Fahrenheit");
         print!("Input: ");
         io::stdout().flush().unwrap();
