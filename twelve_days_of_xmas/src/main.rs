@@ -1,13 +1,13 @@
 fn main() {
     println!("Twelve Days Of Christmas\n");
     for (i, day) in DAYS.iter().enumerate() {
-        println!("On the {} day of Christmas", day);
+        println!("On the {day} day of Christmas");
         println!("My true love sent to me");
         if i == 0 {
             println!("A partridge in a pear tree");
         } else {
-            for j in (0..i + 1).rev() {
-                println!("{}", GIFTS[j])
+            for gift in GIFTS[..=i].iter().rev() {
+                println!("{gift}");
             }
         }
         println!();
