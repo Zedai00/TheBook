@@ -1,7 +1,7 @@
 fn main() {
     println!("Twelve Days Of Christmas\n");
-    for i in 0..12 {
-        println!("On the {} day of Christmas", DAYS[i]);
+    for (i, day) in DAYS.iter().enumerate() {
+        println!("On the {} day of Christmas", day);
         println!("My true love sent to me");
         if i == 0 {
             println!("A partridge in a pear tree");
